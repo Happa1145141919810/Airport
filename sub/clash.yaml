@@ -4,6 +4,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 🇨🇳 HappaNetwork3, server: V2RAY.Happa114.repl.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ci7rieYa}
   - {name: 🇺🇸 HappaNetworkAirportUs1, server: kun1.happaa.com, port: 8443, type: vmess, uuid: dc545c22-ea88-443c-ae94-953f016c9fd9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /download, headers: {Host: kun1.happaa.com}}}
 proxy-groups:
   - name: Proxies
@@ -14,6 +15,7 @@ proxy-groups:
       - JP
       - US
       - TW
+      - 🇨🇳 HappaNetwork3
       - 🇺🇸 HappaNetworkAirportUs1
   - name: Apple
     type: select
