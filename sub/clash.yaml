@@ -4,6 +4,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 🇨🇳 HappaNetworkAirport5trojan, server: trojan.HappaShare.repl.co, port: 443, type: trojan, password: 143885b3, skip-cert-verify: false}
   - {name: 🇺🇸 HappaNetworkUs2Vmess, server: us2-vmess.happa.top, port: 443, type: vmess, uuid: 5dd48191-584f-43e0-8698-445d2b2d8a7b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /NdETL, headers: {Host: us2-vmess.happa.top}}}
   - {name: 🇺🇸 HappaNetworkAirportUs1, server: kun1.happaa.com, port: 8443, type: vmess, uuid: dc545c22-ea88-443c-ae94-953f016c9fd9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /download, headers: {Host: kun1.happaa.com}}}
   - {name: 🇨🇳 HappaNetwork3SS, server: V2RAY.Happa114.repl.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ci7rieYa}
@@ -17,6 +18,7 @@ proxy-groups:
       - JP
       - US
       - TW
+      - 🇨🇳 HappaNetworkAirport5trojan
       - 🇺🇸 HappaNetworkUs2Vmess
       - 🇺🇸 HappaNetworkAirportUs1
       - 🇨🇳 HappaNetwork3SS
