@@ -4,7 +4,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 HappaNetworkUS1, server: us1vmess.happa.cf, port: 443, type: vmess, uuid: 9e5ca389-c93a-4fd7-9306-e650a3c1937a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: us1vmess.happa.cf}}}
+  - {name: 🇭🇰 HappaNetworkHKTrojan, server: hk.biluntong.com, port: 443, type: trojan, password: passwd, skip-cert-verify: false}
 proxy-groups:
   - name: Proxies
     type: select
@@ -14,7 +14,7 @@ proxy-groups:
       - JP
       - US
       - TW
-      - 🇺🇸 HappaNetworkUS1
+      - 🇭🇰 HappaNetworkHKTrojan
   - name: Apple
     type: select
     proxies:
@@ -55,7 +55,7 @@ proxy-groups:
   - name: HK
     type: select
     proxies:
-      - DIRECT
+      - 🇭🇰 HappaNetworkHKTrojan
   - name: SG
     type: select
     proxies:
@@ -71,7 +71,7 @@ proxy-groups:
   - name: US
     type: select
     proxies:
-      - 🇺🇸 HappaNetworkUS1
+      - DIRECT
 rules:
  - DOMAIN-SUFFIX,17gouwuba.com,REJECT
  - DOMAIN-SUFFIX,186078.com,REJECT
