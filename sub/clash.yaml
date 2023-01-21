@@ -4,7 +4,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 HappaNetworkHKTrojan, server: hk.biluntong.com, port: 443, type: trojan, password: passwd, skip-cert-verify: false}
+  - {name: 🇭🇰 HappaNetworkHKTrojan, server: hktrojan.happa.cf, port: 443, type: trojan, password: passwd, skip-cert-verify: false}
 proxy-groups:
   - name: Proxies
     type: select
