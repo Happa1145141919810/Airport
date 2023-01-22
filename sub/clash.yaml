@@ -4,7 +4,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 HappaNetworkUS4, server: us4trojan.happa.cf, port: 443, type: trojan, password: passwd, skip-cert-verify: false}
+  - {name: 🇷🇺 HappaNetworkRU, server: ru.happa.cf, port: 443, type: trojan, password: passwd, skip-cert-verify: false}
 proxy-groups:
   - name: Proxies
     type: select
@@ -14,7 +14,7 @@ proxy-groups:
       - JP
       - US
       - TW
-      - 🇺🇸 HappaNetworkUS4
+      - 🇷🇺 HappaNetworkRU
   - name: Apple
     type: select
     proxies:
@@ -71,7 +71,7 @@ proxy-groups:
   - name: US
     type: select
     proxies:
-      - 🇺🇸 HappaNetworkUS4
+      - DIRECT
 rules:
  - DOMAIN-SUFFIX,17gouwuba.com,REJECT
  - DOMAIN-SUFFIX,186078.com,REJECT
