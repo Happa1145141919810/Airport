@@ -54,6 +54,13 @@ proxy-groups:
       - Proxies
       - HK
       - TW
+  - name: Bilibili
+    type: select
+    proxies:
+      - DIRECT
+      - Proxies
+      - HK
+      - TW
   - name: HK
     type: select
     proxies:
@@ -75,6 +82,7 @@ proxy-groups:
     proxies:
       - 🇺🇸 HappaNetworkUS1
 rules:
+ - DOMAIN-SUFFIX,xftld.org,DIRECT
  - DOMAIN-SUFFIX,17gouwuba.com,REJECT
  - DOMAIN-SUFFIX,186078.com,REJECT
  - DOMAIN-SUFFIX,189key.com,REJECT
